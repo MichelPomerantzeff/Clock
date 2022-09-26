@@ -1,0 +1,25 @@
+.main-container {
+  padding-top: 80px;
+}
+
+.main-container h1 {
+  font-size: 4rem;
+}
+
+.links {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  width: 200px;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+a:hover {
+  font-size: 1.4rem;
+}

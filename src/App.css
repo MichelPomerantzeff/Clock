@@ -1,38 +1,57 @@
+@font-face {
+  font-family: "RobotoMono";
+  src: url("../public/RobotoMono-Thin.ttf");
+}
+
+* {
+  font-family: "RobotoMono";
+  margin: 0;
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-image: url("../public/space.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
   color: white;
+  background-size: cover;
 }
 
-.App-link {
-  color: #61dafb;
+.icon {
+  font-size: 5rem;
+  padding: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.time,
+.alarm,
+.stopwatch,
+.countdown {
+  font-size: 7rem;
+  text-shadow: 1px 1px 10px whitesmoke;
+}
+
+.countdown button {
+  width: 100px;
+}
+
+.buttons button:hover {
+  opacity: .8;
+}
+
+.start {
+  background-color: rgb(128, 206, 11);
+}
+
+.stop {
+  background-color: rgb(187, 36, 36);
+}
+
+.resume {
+  background-color: rgb(128, 206, 11);
+}
+
+.reset,
+.set {
+  background-color: rgb(56, 179, 228);
 }

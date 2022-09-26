@@ -1,0 +1,18 @@
+.stopwatch-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.stopwatch-buttons button {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 20px;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    color: white;
+    text-shadow: 0 0 1px black;
+}
