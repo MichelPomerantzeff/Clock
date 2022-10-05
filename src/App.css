@@ -13,7 +13,7 @@
   background-image: url("../public/space.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  height: 100vh;
+  min-height: 100vh;
   color: white;
   background-size: cover;
 }
@@ -29,10 +29,6 @@
 .countdown {
   font-size: 7rem;
   text-shadow: 1px 1px 10px whitesmoke;
-}
-
-.countdown button {
-  width: 100px;
 }
 
 .buttons button:hover {
@@ -54,4 +50,36 @@
 .reset,
 .set {
   background-color: rgb(56, 179, 228);
+}
+
+@media (max-width: 980px) {
+
+  .icon {
+    font-size: 3rem;
+    padding: 20px;
+  }
+
+  .time,
+  .alarm,
+  .stopwatch,
+  .countdown {
+    font-size: 5rem;
+    text-shadow: 1px 1px 10px whitesmoke;
+  }
+}
+
+@media (max-width: 420px) {
+  .icon {
+    font-size: 1.8rem;
+    padding: 20px;
+  }
+
+  .time,
+  .alarm,
+  .stopwatch,
+  .countdown {
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 10px whitesmoke;
+  }
+
 }

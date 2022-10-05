@@ -9,3 +9,15 @@
     font-size: 1.5rem;
 }
 
+@media (max-width: 980px) {
+   
+    .date {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .date {
+        font-size: .8rem;
+    }
+}
