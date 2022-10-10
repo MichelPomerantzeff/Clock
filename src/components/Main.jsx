@@ -1,8 +1,16 @@
 import React from 'react';
 import "../css/Main.css";
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
+import { useEffect } from 'react';
 
 function Main(props) {
+
+    const navigate = useNavigate()
+
+    useEffect(() => {
+        navigate('/clock')
+    }, [])
+
     return (
         <div className='main-container'>
 
@@ -10,18 +18,18 @@ function Main(props) {
             <h1>Clock App </h1>
 
             <div className='links'>
-                <Link to="/">
+                <Link to="/clock">
                     Clock
                 </Link>
 
-                <Link to="/alarm">
+                <Link to="/clock/alarm">
                     Alarm
                 </Link>
-                <Link to="/stopwatch">
+                <Link to="/clock/stopwatch">
                     Stopwatch
                 </Link>
 
-                <Link to="/countdown">
+                <Link to="/clock/countdown">
                     Countdown
                 </Link>
             </div>

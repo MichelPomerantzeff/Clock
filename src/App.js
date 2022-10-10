@@ -17,19 +17,19 @@ function App() {
           <Main/>
 
           <Routes>
-            <Route path="/" element={<Clock />} />
+            <Route path="/clock" element={<Clock />} />
           </Routes>
 
           <Routes>
-            <Route path="/alarm" element={<Alarm />} />
+            <Route path="/clock/alarm" element={<Alarm />} />
           </Routes>
 
           <Routes>
-            <Route path="/stopwatch" element={<Stopwatch />} />
+            <Route path="/clock/stopwatch" element={<Stopwatch />} />
           </Routes>
 
           <Routes>
-            <Route path="/countdown" element={<Countdown />} />
+            <Route path="/clock/countdown" element={<Countdown />} />
           </Routes>
 
         </Router>
