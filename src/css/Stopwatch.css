@@ -16,3 +16,20 @@
     color: white;
     text-shadow: 0 0 1px black;
 }
+
+@media (max-width: 980px) {
+    .stopwatch-buttons button {
+        font-size: 1rem;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+}
+
+@media (max-width: 420px) {
+    .stopwatch-buttons button {
+        font-size: .8rem;
+        margin: 20px;
+        padding: 4px 8px;
+        border-radius: 2px;
+    }
+}

@@ -23,7 +23,7 @@
 }
 
 
-.arrow-buttons{
+.arrow-buttons {
     background: rgba(0, 0, 0, 0.6);
     color: white;
     border: solid 1px rgba(128, 128, 128, 0.432);
@@ -36,7 +36,7 @@
     width: 100%;
 }
 
-.hidden{
+.hidden {
     visibility: hidden;
 }
 
@@ -50,4 +50,32 @@
     outline: none;
     color: white;
     text-shadow: 0 0 1px black;
+}
+
+@media (max-width: 980px) {
+
+    .arrow-buttons {
+        border-radius: 2px;
+        font-size: 1.5rem;
+    }
+
+
+    .countdown-buttons button {
+        font-size: 1rem;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+}
+
+@media (max-width: 420px) {
+    .countdown div button {
+        font-size: 1rem;
+    }
+
+    .countdown-buttons button {
+        font-size: .8rem;
+        margin: 20px;
+        padding: 4px 8px;
+        border-radius: 2px;
+    }
 }

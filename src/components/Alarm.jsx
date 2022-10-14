@@ -14,7 +14,7 @@ function Alarm(props) {
 
 
     return (
-        <div className='alarm-container'>
+        <div className='alarm_container'>
             <div className='icon'>
                 {alarm}
             </div>
