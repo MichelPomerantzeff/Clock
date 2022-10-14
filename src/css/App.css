@@ -1,6 +1,6 @@
 @font-face {
   font-family: "RobotoMono";
-  src: url("../public/RobotoMono-Thin.ttf");
+  src: url("../fonts/RobotoMono-Thin.ttf");
 }
 
 * {
@@ -10,7 +10,7 @@
 
 .App {
   text-align: center;
-  background-image: url("../public/space.jpg");
+  background-image: url("../images/space.jpg");
   background-repeat: no-repeat;
   background-position: center;
   min-height: 100vh;

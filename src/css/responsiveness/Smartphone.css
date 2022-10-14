@@ -1,0 +1,62 @@
+@media (max-width: 420px) {
+
+    /* ENTIRE APP */
+    .icon {
+        font-size: 1.8rem;
+        padding: 20px;
+    }
+
+    .time,
+    .alarm,
+    .stopwatch,
+    .countdown {
+        font-size: 2.5rem;
+        text-shadow: 1px 1px 10px whitesmoke;
+    }
+
+    .main-container h1 {
+        font-size: 1.8rem;
+    }
+
+    .links {
+        gap: 20px
+    }
+
+    a {
+        font-size: .7rem;
+    }
+
+
+    /* CLOCK */
+    .date {
+        font-size: .8rem;
+    }
+
+    /* ALARM */
+
+
+
+    /* STOPWATCH */
+    .stopwatch-buttons button {
+        font-size: .8rem;
+        margin: 20px;
+        padding: 4px 8px;
+        border-radius: 2px;
+
+    }
+
+    /* COUNTDOWN */
+    .arrow-buttons {
+        font-size: 1rem;
+    }
+
+
+    .countdown-buttons button {
+        font-size: .8rem;
+        margin: 20px;
+        padding: 4px 8px;
+        border-radius: 2px;
+
+    }
+
+}

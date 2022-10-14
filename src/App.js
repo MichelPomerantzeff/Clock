@@ -1,7 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
-import "./App.css";
-import Main from "./components/Main";
+import "./css/App.css";
+import "./css/responsiveness/Ipad.css";
+import "./css/responsiveness/Smartphone.css";
+
+import Main from "./Main";
 import Clock from "./components/Clock";
 import Countdown from "./components/Countdown";
 import Stopwatch from "./components/Stopwatch";
