@@ -16,9 +16,9 @@ function Main(props) {
 
             <div className='links'>
                 <a onClick={() => setSlide(0)} className=''>Clock</a>
-                {/* <a onClick={() => setSlide(1)} className=''>Alarm</a> */}
-                <a onClick={() => setSlide(1)} className=''>Stopwatch</a>
-                <a onClick={() => setSlide(2)} className=''>Countdown</a>
+                <a onClick={() => setSlide(1)} className=''>Alarm</a>
+                <a onClick={() => setSlide(2)} className=''>Stopwatch</a>
+                <a onClick={() => setSlide(3)} className=''>Countdown</a>
             </div>
 
             <div className="clock_functionalities_container">
@@ -29,9 +29,9 @@ function Main(props) {
                         <Clock />
                     </div>
                     
-                    {/* <div style={{ transform: `translateX(-${100 * slide}%)` }} className="clock_functionality">
+                    <div style={{ transform: `translateX(-${100 * slide}%)` }} className="clock_functionality">
                         <Alarm />
-                    </div> */}
+                    </div>
 
                     <div style={{ transform: `translateX(-${100 * slide}%)` }} className="clock_functionality">
                         <Stopwatch />
