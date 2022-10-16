@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import "../css/Alarm.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faVolumeHigh as alarmIcon} from '@fortawesome/free-solid-svg-icons'
+import { faVolumeHigh as alarmIcon } from '@fortawesome/free-solid-svg-icons'
 
 const alarm = <FontAwesomeIcon icon={alarmIcon} />
 
@@ -23,6 +23,11 @@ function Alarm(props) {
                 <span>{("0" + (min)).slice(-2)}:</span>
                 <span>{("0" + (sec)).slice(-2)}</span>
             </div>
+
+            <div className="toggle_button">
+                <input type="checkbox" id="switch" /><label for="switch">Toggle</label>
+            </div>
+
         </div>
     );
 }
