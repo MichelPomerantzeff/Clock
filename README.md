@@ -1,3 +1,9 @@
+# Clock App
+
+[>>> View Live Demo <<<](https://michelpomerantzeff.github.io/Clock/)
+
+![clock](https://user-images.githubusercontent.com/96065240/196055089-4ece79a8-b4c0-4b36-a904-726c651b7371.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
