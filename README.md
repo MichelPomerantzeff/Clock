@@ -13,7 +13,7 @@ A real time clock that includes the following functions:
 - React.js
 
 ## Future implementations:
-- Add Alarm function
+- Alarm function
 
 
 ## How to use?
@@ -31,7 +31,7 @@ npm install
 npm start
 ```
 
-To see a live demo of this app click [here](https://michelpomerantzeff.github.io/Clock/)
+#### To see a live demo of this app click [here](https://michelpomerantzeff.github.io/Clock/)
 
 ### Author
 - Michel Pomerantzeff
