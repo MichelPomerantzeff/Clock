@@ -58,40 +58,6 @@ a:hover {
 }
 
 
-
-/* ALL FUNCTIONALITIES */
-.icon {
-  font-size: 5rem;
-  padding: 30px;
-}
-
-.time,
-.alarm,
-.stopwatch,
-.countdown {
-  font-size: 7rem;
-  text-shadow: 1px 1px 10px whitesmoke;
-}
-
-.buttons button:hover {
-  opacity: .8;
-}
-
-.start,
-.resume {
-  background-color: rgb(128, 206, 11);
-}
-
-.stop {
-  background-color: rgb(187, 36, 36);
-}
-
-.reset,
-.set {
-  background-color: rgb(56, 179, 228);
-}
-
-
 @media (max-width: 980px) {
 
   .header {
@@ -114,18 +80,6 @@ a:hover {
     min-width: 420px;
   }
 
-  .icon {
-    font-size: 3rem;
-    padding: 20px;
-  }
-
-  .time,
-  .alarm,
-  .stopwatch,
-  .countdown {
-    font-size: 5rem;
-    text-shadow: 1px 1px 10px whitesmoke;
-  }
 }
 
 

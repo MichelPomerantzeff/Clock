@@ -2,7 +2,7 @@ import "./css/Main.css";
 import Clock from "./components/Clock";
 import Countdown from "./components/Countdown";
 import Stopwatch from "./components/Stopwatch";
-import Alarm from "./components/Alarm";
+// import Alarm from "./components/Alarm";
 import { useState } from "react";
 
 function Main(props) {

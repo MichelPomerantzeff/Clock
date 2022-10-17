@@ -17,3 +17,92 @@
   color: white;
   background-size: cover;
 }
+
+.icon {
+  font-size: 5rem;
+  padding: 30px;
+}
+
+.time,
+.alarm,
+.stopwatch,
+.countdown {
+  font-size: 7rem;
+  text-shadow: 1px 1px 10px whitesmoke;
+  display: flex;
+}
+
+
+.start,
+.resume {
+  background-color: rgb(128, 206, 11);
+}
+
+.stop {
+  background-color: rgb(187, 36, 36);
+}
+
+.reset,
+.set {
+  background-color: rgb(56, 179, 228);
+}
+
+.main_buttons_container {
+  margin-top: 50px;
+}
+
+.main_buttons_container button {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  color: white;
+  text-shadow: 0 0 1px black;
+  transition: .2s ease;
+  cursor: pointer;
+}
+
+.main_buttons_container button:hover {
+  opacity: .9;
+}
+
+.main_buttons_container button:active {
+  transform: scale(.9);
+  transition: .2s ease;
+  opacity: 1;
+}
+
+@media (max-width: 980px) {
+  .main_buttons_container button {
+      font-size: 1rem;
+      padding: 5px 10px;
+  }
+  
+  .icon {
+    font-size: 3rem;
+    padding: 20px;
+  }
+
+  .time,
+  .alarm,
+  .stopwatch,
+  .countdown {
+    font-size: 5rem;
+    text-shadow: 1px 1px 10px whitesmoke;
+  }
+}
+
+@media (max-width: 420px) {
+  .main_buttons_container button {
+      font-size: .8rem;
+      margin: 20px;
+      padding: 4px 8px;
+  }
+
+  footer{
+    font-size: .7rem;
+  }
+}

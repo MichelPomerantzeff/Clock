@@ -38,7 +38,7 @@ function Stopwatch(props) {
                 <span>{("0" + ((time / 10) % 100)).slice(-2)}</span>
             </div>
 
-            <div className='stopwatch-buttons'>
+            <div className='main_buttons_container'>
 
                 {!timerOn && time === 0 && <button className='start' onClick={() => setTimerOn(true)}>Start</button>}
 

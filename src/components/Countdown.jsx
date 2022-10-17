@@ -125,7 +125,7 @@ function Countdown(props) {
 
             </div>
 
-            <div className='countdown-buttons'>
+            <div className='main_buttons_container'>
 
                 {
                     !timerOn && !resumeButton &&
@@ -168,9 +168,7 @@ function Countdown(props) {
                         }}>
                         Reset
                     </button>}
-
             </div>
-
         </div>
     );
 }
