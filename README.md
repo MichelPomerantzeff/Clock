@@ -31,7 +31,7 @@ npm install
 npm start
 ```
 
-#### To see a live demo of this app click [here](https://michelpomerantzeff.github.io/Clock/)
+##### To see a live demo of this app click [here](https://michelpomerantzeff.github.io/Clock/)
 
 ### Author
 - Michel Pomerantzeff
