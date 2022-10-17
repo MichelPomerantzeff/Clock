@@ -16,7 +16,7 @@ A real time clock that includes the following functions:
 - Add Alarm function
 
 
-### How to use?
+## How to use?
 Download this repository.
 
 ### In the project directory, run the next command:
