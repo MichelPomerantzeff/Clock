@@ -17,7 +17,7 @@ A real time clock that includes the following functions:
 
 
 ## How to use?
-Download this repository.
+Download this repository
 
 ### In the project directory, run the next command:
 
@@ -31,7 +31,7 @@ npm install
 npm start
 ```
 
-##### To see a live demo of this app click [here](https://michelpomerantzeff.github.io/Clock/)
+##### To see a live demo of this project, click [here](https://michelpomerantzeff.github.io/Clock/)
 
 ### Author
 - Michel Pomerantzeff
