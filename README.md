@@ -9,7 +9,7 @@ A real time clock that includes the following functions:
 - Stopwatch
 - Countdown
 
-## Stack Used:
+## 🚀 Stack Used:
 - React.js
 
 ## Future implementations:
