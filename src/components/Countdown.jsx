@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import "../css/Countdown.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHourglassHalf, faCaretUp, faCaretDown } from '@fortawesome/free-solid-svg-icons'
+import AlarmGoingOff from './AlarmGoingOff';
 
 const hourglass = <FontAwesomeIcon icon={faHourglassHalf} />
 const up = <FontAwesomeIcon icon={faCaretUp} />
@@ -13,6 +14,7 @@ function Countdown(props) {
     const [min, setMin] = useState(0)
     const [hour, setHour] = useState(0)
 
+    const [silence, setSilence] = useState(true)
     const [isVisible, setIsVisible] = useState(true)
     const [timerOn, setTimerOn] = useState(false)
     const [resumeButton, setResumeButton] = useState(false)
@@ -22,6 +24,12 @@ function Countdown(props) {
     useEffect(() => {
         totalTime === 0 && setTimerOn(false)
         totalTime === 0 && setResumeButton(false)
+        if (sec === 59 && timerOn) {
+            setMin(prevMin => prevMin < 1 ? 59 : prevMin - 1)
+        }
+        if(sec < 1 && timerOn){
+            setSilence(false)
+        }
     }, [sec])
 
     useEffect(() => {
@@ -29,12 +37,6 @@ function Countdown(props) {
             setHour(prevHour => prevHour < 1 ? 23 : prevHour - 1)
         }
     }, [min])
-
-    useEffect(() => {
-        if (sec === 59 && timerOn) {
-            setMin(prevMin => prevMin < 1 ? 59 : prevMin - 1)
-        }
-    }, [sec])
 
     useEffect(() => {
         let interval = null
@@ -51,10 +53,19 @@ function Countdown(props) {
 
     }, [timerOn])
 
+    function pauseAudio() {
+        setSilence(true)
+    }
 
 
     return (
         <div className='countdown-container'>
+
+            {
+                !silence &&
+                <AlarmGoingOff pauseAudio={pauseAudio} />
+            }
+
             <div className='icon'>
                 {hourglass}
             </div>

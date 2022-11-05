@@ -1,0 +1,41 @@
+.alarm_going_off_container {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alarm_goin_off_wrapper {
+    background: #ffffffec;
+    height: 100%;
+    width: 40%;
+    min-width: 200px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.alarm_goin_off_wrapper img {
+    width: 40%;
+    margin: auto;
+
+}
+
+.silence_button {
+    width: 80%;
+    margin: 30px auto;
+    padding: 10px;
+    border-radius: 3px;
+    border: solid 2px #000;
+    outline: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.silence_button:hover {
+    background: #d6d6d6;
+}
