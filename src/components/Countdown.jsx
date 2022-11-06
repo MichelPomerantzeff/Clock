@@ -27,7 +27,7 @@ function Countdown(props) {
         if (sec === 59 && timerOn) {
             setMin(prevMin => prevMin < 1 ? 59 : prevMin - 1)
         }
-        if(sec < 1 && timerOn){
+        if(sec + min + hour < 1 && timerOn){
             setSilence(false)
         }
     }, [sec])
