@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
+import './AlarmBeep.css'
 
 import alarm from '../alarm/alarm-sound.mp3'
 import alarmImage from '../images/bell.png'
@@ -19,16 +20,18 @@ function AlarmGoingOff(props) {
 
 
     return (
-        <div className='alarm_going_off_container'>
+        <div className='alarm-beep'>
 
-            <div className="alarm_goin_off_wrapper">
+            <div className="alarm-beep-wrapper">
 
                 <audio src={alarm} ref={alarmElem} />
 
-                <img src={alarmImage} alt="" />
+                <div className="alarm-beep-img">
+                    <img src={alarmImage} alt="" />
+                </div>
 
                 <button
-                    className="silence_button"
+                    className="action-btn silence_button"
                     onClick={() => props.pauseAudio(alarmImage)}
                 >
                     Silence

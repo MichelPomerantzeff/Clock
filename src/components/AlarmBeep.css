@@ -1,0 +1,47 @@
+.alarm-beep{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.alarm-beep-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    width: 90vw;
+    margin: auto;
+    height: 100%;
+    gap: 50px;
+    background: lightgray;
+    border-radius: 10px;
+}
+
+.alarm-beep-img{
+    max-width: 200px;
+}
+
+.alarm-beep-img img{
+    width: 100%;
+}
+
+.silence_button {
+    background-color:#4c9be9
+}
+
+@media (max-width: 900px) {
+
+    .alarm-beep-img img{
+        transform: scale(.8);
+    }
+  }
+
+@media (max-width: 650px) {
+
+    .alarm-beep-img img{
+        transform: scale(.6);
+    }
+  }

@@ -1,4 +1,4 @@
-import './Countdown.css'
+import './Countdown.css';
 import { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHourglassHalf, faCaretUp, faCaretDown } from '@fortawesome/free-solid-svg-icons'
@@ -15,10 +15,10 @@ function Countdown(props) {
     const [hour, setHour] = useState(0)
 
     const [silence, setSilence] = useState(true)
-    const [isVisible, setIsVisible] = useState(true)
     const [timerOn, setTimerOn] = useState(false)
     const [resumeButton, setResumeButton] = useState(false)
-
+    
+    const isVisible = true;
     let totalTime = sec + min + hour
 
     useEffect(() => {
@@ -27,7 +27,7 @@ function Countdown(props) {
         if (sec === 59 && timerOn) {
             setMin(prevMin => prevMin < 1 ? 59 : prevMin - 1)
         }
-        if(sec + min + hour < 1 && timerOn){
+        if (sec + min + hour < 1 && timerOn) {
             setSilence(false)
         }
     }, [sec])
@@ -60,12 +60,12 @@ function Countdown(props) {
 
     return (
         <div className='countdown-container'>
-            { !silence && <AlarmGoingOff pauseAudio={pauseAudio} /> }
+            {!silence && <AlarmGoingOff pauseAudio={pauseAudio} />}
 
             <div className='icon'>
                 {hourglass}
             </div>
-            
+
             <div className='countdown text-smoke time'>
                 <div className='countdown-fraction hour'>
                     {
