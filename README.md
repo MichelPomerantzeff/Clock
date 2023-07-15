@@ -12,16 +12,17 @@ A real time clock that includes the following functions:
 ## 🚀 Stack Used:
 - React.js
 
-## Future implementations:
-- Alarm function
-
-
 ## How to use?
-Download this repository
+Download or clone this repository
+### In your terminal, run the next command:
+##### To clone the repository:
+```bash
+git clone https://github.com/MichelPomerantzeff/Clock.git
+```
 
-### In the project directory, run the next command:
+### In the project directory, run the next commands:
 
-##### To install dependencies and node_modules
+##### To install dependencies and node_modules:
 ```bash
 npm install
 ```
