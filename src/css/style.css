@@ -52,3 +52,30 @@
     transition: .2s ease;
     opacity: 1;
 }
+
+
+@media (max-width: 900px) {
+
+    .icon {
+        font-size: 4rem;
+    }
+
+    .time {
+        font-size: 5rem;
+    }
+
+    .text-smoke {
+        text-shadow: 1px 1px 6px whitesmoke;
+    }
+
+    .action-buttons-wrapper {
+        gap: 10px;
+    }
+
+    .action-btn {
+        font-size: .9rem;
+        font-weight: bold;
+        padding: 5px 10px;
+        border-radius: 3px;
+    }
+}
