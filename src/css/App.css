@@ -67,7 +67,7 @@
 }
 
 footer {
-  border: solid 2px red;
+  /* border: solid 2px red;z */
   flex: 1;
   display: flex;
   flex-direction: column;

@@ -60,13 +60,13 @@ function App(props) {
                             <Clock />
                         </div>
 
-                        {/* <div className="function">
+                        <div className="function">
                             <Stopwatch />
                         </div>
 
                         <div className="function">
                             <Countdown />
-                        </div> */}
+                        </div>
 
                         {/* <div className="function">
                             <Alarm />

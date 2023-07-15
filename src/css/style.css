@@ -1,3 +1,54 @@
-.icon{
+.icon {
     font-size: 7rem;
+}
+
+.time {
+    font-size: 8rem;
+}
+
+.text-smoke {
+    text-shadow: 1px 1px 10px whitesmoke;
+}
+
+
+.start,
+.resume {
+    background-color: rgb(128, 206, 11);
+}
+
+.stop {
+    background-color: rgb(187, 36, 36);
+}
+
+.reset,
+.set {
+    background-color: rgb(56, 179, 228);
+}
+
+.main_buttons_container {
+    margin-top: 50px;
+}
+
+.main_buttons_container button {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: white;
+    text-shadow: 0 0 1px black;
+    transition: .2s ease;
+    cursor: pointer;
+}
+
+.main_buttons_container button:hover {
+    opacity: .9;
+}
+
+.main_buttons_container button:active {
+    transform: scale(.9);
+    transition: .2s ease;
+    opacity: 1;
 }

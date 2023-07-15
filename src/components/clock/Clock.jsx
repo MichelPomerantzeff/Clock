@@ -20,8 +20,8 @@ function Clock(props) {
             <div className='icon'>
                 {clock}
             </div>
-            <p className='date'>{date}</p>
-            <p className='time'>{time}</p>
+            <p className='date text-smoke'>{date}</p>
+            <p className='time text-smoke'>{time}</p>
         </div>
     );
 }
