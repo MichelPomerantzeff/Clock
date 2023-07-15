@@ -1,8 +1,8 @@
 import './css/App.css'
 import './css/style.css'
 import Clock from "./components/clock/Clock";
+import Stopwatch from "./components/stopwatch/Stopwatch";
 import Countdown from "./components/Countdown";
-import Stopwatch from "./components/Stopwatch";
 // import Alarm from "./components/Alarm";
 import { useState } from "react";
 
@@ -11,6 +11,7 @@ function App(props) {
     const [isClockSelected, setIsClockSelected] = useState(false)
     const [isStopwatchSelected, setIsStopwatchSelected] = useState(false)
     const [isCountdownSelected, setIsCountdownSelected] = useState(false)
+    const [index, setIndex] = useState(0)
 
     const handleFunctionSelected = (func) => {
         switch (func) {
@@ -18,16 +19,19 @@ function App(props) {
                 setIsClockSelected(true)
                 setIsStopwatchSelected(false)
                 setIsCountdownSelected(false)
+                setIndex(0)
                 break;
             case 'stopwatch':
                 setIsClockSelected(false)
                 setIsStopwatchSelected(true)
                 setIsCountdownSelected(false)
+                setIndex(-100)
                 break;
             case 'countdown':
                 setIsClockSelected(false)
                 setIsStopwatchSelected(false)
                 setIsCountdownSelected(true)
+                setIndex(-200)
                 break;
             default:
                 setIsClockSelected(false)
@@ -56,15 +60,15 @@ function App(props) {
 
                     <div className="functions-wrapper">
 
-                        <div className="function">
+                        <div style={{ transform: `translateX(${index}%)` }} className="function">
                             <Clock />
                         </div>
 
-                        <div className="function">
+                        <div style={{ transform: `translateX(${index}%)` }} className="function">
                             <Stopwatch />
                         </div>
 
-                        <div className="function">
+                        <div style={{ transform: `translateX(${index}%)` }} className="function">
                             <Countdown />
                         </div>
 
@@ -75,7 +79,7 @@ function App(props) {
                     </div>
                 </div>
 
-                <footer>&copy; 2022 by Michel Pomerantzeff</footer>
+                <footer>&copy; 2022 Michel Pomerantzeff</footer>
             </div>
 
         </main>

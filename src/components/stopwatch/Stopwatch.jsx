@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import './Stopwatch.css'
+import { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStopwatch } from '@fortawesome/free-solid-svg-icons'
 
@@ -31,22 +32,17 @@ function Stopwatch(props) {
             <div className='icon'>
                 {stopwatch}
             </div>
-            <div className='stopwatch'>
+            <div className='time text-smoke stopwatch'>
                 <span>{("0" + Math.floor((time / 60000) % 60)).slice(-2)}:</span>
                 <span>{("0" + Math.floor((time / 1000) % 60)).slice(-2)}.</span>
                 <span>{("0" + ((time / 10) % 100)).slice(-2)}</span>
             </div>
 
-            <div className='main_buttons_container'>
-
-                {!timerOn && time === 0 && <button className='start' onClick={() => setTimerOn(true)}>Start</button>}
-
-                {timerOn && <button className='stop' onClick={() => setTimerOn(false)}>Stop</button>}
-
-                {!timerOn && time !== 0 && <button className='resume' onClick={() => setTimerOn(true)}>Resume</button>}
-
-                {!timerOn && time > 0 && <button className='reset' onClick={() => setTime(0)}>Reset</button>}
-
+            <div className='action-buttons-wrapper'>
+                {!timerOn && time === 0 && <button className='action-btn start' onClick={() => setTimerOn(true)}>Start</button>}
+                {timerOn && <button className='action-btn stop' onClick={() => setTimerOn(false)}>Stop</button>}
+                {!timerOn && time !== 0 && <button className='action-btn resume' onClick={() => setTimerOn(true)}>Resume</button>}
+                {!timerOn && time > 0 && <button className='action-btn reset' onClick={() => setTime(0)}>Reset</button>}
             </div>
 
         </div>

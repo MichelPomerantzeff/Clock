@@ -25,29 +25,29 @@
     background-color: rgb(56, 179, 228);
 }
 
-.main_buttons_container {
-    margin-top: 50px;
+.action-buttons-wrapper {
+    display: flex;
+    gap: 20px;
 }
 
-.main_buttons_container button {
+.action-btn {
     font-size: 1.3rem;
     font-weight: bold;
-    margin: 20px;
     padding: 10px 20px;
     border-radius: 5px;
     border: none;
     outline: none;
     color: white;
-    text-shadow: 0 0 1px black;
+    text-shadow: 0 0 2px black;
     transition: .2s ease;
     cursor: pointer;
 }
 
-.main_buttons_container button:hover {
+.action-btn:hover {
     opacity: .9;
 }
 
-.main_buttons_container button:active {
+.action-btn:active {
     transform: scale(.9);
     transition: .2s ease;
     opacity: 1;
