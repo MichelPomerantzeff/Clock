@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 
 import alarm from '../alarm/alarm-sound.mp3'
 import alarmImage from '../images/bell.png'

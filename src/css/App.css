@@ -14,8 +14,10 @@
 }
 
 .selected {
-  font-size: 2rem;
-  color: red;
+  font-size: 2.5rem !important;
+  text-shadow: 1px 1px 6px whitesmoke !important;
+  text-decoration: underline;
+  transform: translateY(-10px);
 }
 
 .app-wrapper {
@@ -30,6 +32,7 @@
 .header {
   /* border: solid 2px red; */
   flex: 1;
+  font-size: 4rem;
 }
 
 .functions-title {
@@ -38,6 +41,7 @@
   display: flex;
   align-items: center;
   width: 800px;
+  font-size: 2rem;
 }
 
 .function-title {
@@ -46,22 +50,23 @@
   justify-content: center;
   flex: 1;
   cursor: pointer;
+  font-size: 1.8rem;
 }
 
 .functions-container {
-  border: solid 2px red;
+  /* border: solid 2px red; */
   flex: 10;
 }
 
 .functions-wrapper{
   /* border: solid 2px red; */
   display: flex;
-  width: 1200px;
+  width: 100vw;
   overflow: hidden;
 }
 
 .function{
-  border: solid 2px red;
+  /* border: solid 2px red; */
   display: flex;
   justify-content: center;
   min-width: 100%;

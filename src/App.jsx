@@ -2,13 +2,13 @@ import './css/App.css'
 import './css/style.css'
 import Clock from "./components/clock/Clock";
 import Stopwatch from "./components/stopwatch/Stopwatch";
-import Countdown from "./components/Countdown";
+import Countdown from "./components/countdown/Countdown";
 // import Alarm from "./components/Alarm";
 import { useState } from "react";
 
 function App(props) {
 
-    const [isClockSelected, setIsClockSelected] = useState(false)
+    const [isClockSelected, setIsClockSelected] = useState(true)
     const [isStopwatchSelected, setIsStopwatchSelected] = useState(false)
     const [isCountdownSelected, setIsCountdownSelected] = useState(false)
     const [index, setIndex] = useState(0)
@@ -34,7 +34,7 @@ function App(props) {
                 setIndex(-200)
                 break;
             default:
-                setIsClockSelected(false)
+                setIsClockSelected(true)
                 setIsStopwatchSelected(false)
                 setIsCountdownSelected(false)
         }

@@ -1,7 +1,8 @@
+import './Countdown.css'
 import { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHourglassHalf, faCaretUp, faCaretDown } from '@fortawesome/free-solid-svg-icons'
-import AlarmGoingOff from './AlarmGoingOff';
+import AlarmGoingOff from '../AlarmGoingOff';
 
 const hourglass = <FontAwesomeIcon icon={faHourglassHalf} />
 const up = <FontAwesomeIcon icon={faCaretUp} />
@@ -59,17 +60,14 @@ function Countdown(props) {
 
     return (
         <div className='countdown-container'>
-
-            {
-                !silence &&
-                <AlarmGoingOff pauseAudio={pauseAudio} />
-            }
+            { !silence && <AlarmGoingOff pauseAudio={pauseAudio} /> }
 
             <div className='icon'>
                 {hourglass}
             </div>
-            <div className='countdown'>
-                <div className='hour'>
+            
+            <div className='countdown text-smoke time'>
+                <div className='countdown-fraction hour'>
                     {
                         isVisible && !timerOn &&
                         <button
@@ -91,7 +89,7 @@ function Countdown(props) {
 
                 <span className='colon'>:</span>
 
-                <div className='min'>
+                <div className='countdown-fraction min'>
                     {
                         isVisible && !timerOn &&
                         <button
@@ -113,7 +111,7 @@ function Countdown(props) {
 
                 <span className='colon'>:</span>
 
-                <div className='sec'>
+                <div className='countdown-fraction sec'>
                     {
                         isVisible && !timerOn &&
                         <button
@@ -135,12 +133,12 @@ function Countdown(props) {
 
             </div>
 
-            <div className='main_buttons_container'>
+            <div className='action-buttons-wrapper'>
 
                 {
                     !timerOn && !resumeButton &&
                     <button
-                        className='start'
+                        className='action-btn start'
                         onClick={() => {
                             totalTime > 0 && setTimerOn(true)
                             totalTime > 0 && setResumeButton(true)
@@ -151,7 +149,7 @@ function Countdown(props) {
                 {
                     !timerOn && resumeButton &&
                     <button
-                        className='start'
+                        className='action-btn start'
                         onClick={() => {
                             totalTime > 0 && setTimerOn(true)
                         }}>
@@ -161,7 +159,7 @@ function Countdown(props) {
                 {
                     timerOn &&
                     <button
-                        className='stop'
+                        className='action-btn stop'
                         onClick={() => setTimerOn(false)}>
                         Stop
                     </button>
@@ -169,7 +167,7 @@ function Countdown(props) {
                 {
                     !timerOn && totalTime > 0 &&
                     <button
-                        className='reset'
+                        className='action-btn reset'
                         onClick={() => {
                             setHour(0)
                             setMin(0)

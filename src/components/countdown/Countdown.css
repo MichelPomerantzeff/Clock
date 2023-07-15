@@ -1,0 +1,16 @@
+.countdown-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.countdown {
+    display: flex;
+    padding: 50px 0;
+}
+
+.countdown-fraction {
+    display: flex;
+    flex-direction: column;
+}
