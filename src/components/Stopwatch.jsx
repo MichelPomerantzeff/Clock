@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import "../css/Stopwatch.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStopwatch } from '@fortawesome/free-solid-svg-icons'
 

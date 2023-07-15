@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
-import "../css/Clock.css";
-
+import './Clock.css'
+import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faClock } from '@fortawesome/free-solid-svg-icons'
 

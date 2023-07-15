@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import "../css/Countdown.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHourglassHalf, faCaretUp, faCaretDown } from '@fortawesome/free-solid-svg-icons'
 import AlarmGoingOff from './AlarmGoingOff';

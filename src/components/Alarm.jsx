@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import "../css/Alarm.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faVolumeHigh as alarmIcon } from '@fortawesome/free-solid-svg-icons'
 

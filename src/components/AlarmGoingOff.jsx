@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import '../css/AlarmGoingOff.css'
 
 import alarm from '../alarm/alarm-sound.mp3'
 import alarmImage from '../images/bell.png'
